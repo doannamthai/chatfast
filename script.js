@@ -20,6 +20,7 @@ function init(chatBotId, chatBubbleColor, width = '450px', height = '600px')
   chatBubble.innerHTML = tablerChatIcon;
   chatBubble.setAttribute('tabindex', '-1');
   const chatIframe = document.createElement('iframe');
+  chatIframe.style.zIndex = '999';
   chatIframe.style.position = 'fixed';
   chatIframe.style.bottom = '100px';
   chatIframe.style.right = '20px';
@@ -73,3 +74,5 @@ function ready(fn) {
     const height =  document.querySelector('script[data-chat-service="ChatFast"][data-chat-height]')?.getAttribute('data-chat-height') ?? "600px";
     ready(() => init(botId, bubbleColor, width, height));
 })();
+
+<script src="https://cdn.jsdelivr.net/gh/doannamthai/chatfast/script.min.js" data-chat-service="ChatFast" data-bot-id="e34faed4-1af9-4198-8430-9806f8999971" data-chat-width="450px" data-chat-height="600px"></script>
