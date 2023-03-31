@@ -74,5 +74,3 @@ function ready(fn) {
     const height =  document.querySelector('script[data-chat-service="ChatFast"][data-chat-height]')?.getAttribute('data-chat-height') ?? "600px";
     ready(() => init(botId, bubbleColor, width, height));
 })();
-
-<script src="https://cdn.jsdelivr.net/gh/doannamthai/chatfast/script.min.js" data-chat-service="ChatFast" data-bot-id="e34faed4-1af9-4198-8430-9806f8999971" data-chat-width="450px" data-chat-height="600px"></script>
