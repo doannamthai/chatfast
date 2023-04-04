@@ -24,8 +24,10 @@ function init(chatBotId, chatBubbleColor, width = '450px', height = '600px')
   chatIframe.style.position = 'fixed';
   chatIframe.style.bottom = '100px';
   chatIframe.style.right = '20px';
-  chatIframe.style.width = width;
-  chatIframe.style.height = height;
+  chatIframe.style.width = '100%';
+  chatIframe.style.height = '100%';
+  chatIframe.style.maxWidth = width;
+  chatIframe.style.maxHeight = height;
   chatIframe.style.border = 'none';
   chatIframe.style.display = 'none';
   chatIframe.style.borderRadius = '10px';
