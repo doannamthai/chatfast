@@ -20,14 +20,16 @@ function init(chatBotId, chatBubbleColor, width = '450px', height = '600px')
   chatBubble.innerHTML = tablerChatIcon;
   chatBubble.setAttribute('tabindex', '-1');
   const chatIframe = document.createElement('iframe');
+  const screenWidth = window.screen.width;
+  const screenHeight = window.screen.height;
   chatIframe.style.zIndex = '999';
   chatIframe.style.position = 'fixed';
   chatIframe.style.bottom = '100px';
   chatIframe.style.right = '20px';
   chatIframe.style.width = '100%';
   chatIframe.style.height = '100%';
-  chatIframe.style.maxWidth = width;
-  chatIframe.style.maxHeight = height;
+  chatIframe.style.maxWidth = Math.min(screenWidth, width) + "px";
+  chatIframe.style.maxHeight = Math.min(screenHeight, height) + "px";
   chatIframe.style.border = 'none';
   chatIframe.style.display = 'none';
   chatIframe.style.borderRadius = '10px';
