@@ -1,4 +1,3 @@
-
 function init(chatBotId, chatBubbleColor, width = '450px', height = '600px') 
 {
   const chatIframeUrl =`https://chatfast.io/chat/${chatBotId}`;
